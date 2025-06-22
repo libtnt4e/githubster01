@@ -2,7 +2,7 @@ version: '3'
 
 services:
   fastapi-app:
-    image: libtnt4e/githubster01:latest 
+    image:  rslim087/fastapi-prometheus 
     ports:
       - "8000:8000"
     networks:
@@ -22,7 +22,7 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
     ports:
-      - "3000:3000"
+      - "3001:3001"
     networks:
       - monitoring 
 
